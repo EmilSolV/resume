@@ -351,14 +351,15 @@ section {
 
 /*Timeline*/
 .timeline {
-  display: grid;
+  display: inline;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: rem;
 }
 .timeline .timeline-item {
   position: relative;
   padding-left: 3rem;
+  padding-bottom: 3rem;
   border-left: 1px solid var(--color-grey-5);
 }
 .timeline .timeline-item .tl-icon {
@@ -824,13 +825,12 @@ section {
   
   .tl-skills, .skill {
     padding: 0.2rem 0.6rem;
-    background-color: var(--color-purple);
+    background-color: var(--color-grey-5);
     border-radius: 15px;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    font-weight: 500; 
-    color: var(--tag-text) !important;
+    font-weight: 500;
   }
 
   .tl-skills {
