@@ -196,7 +196,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 18rem;
+  padding-right: 8rem;
 }
 .header-content .right-header .name {
   font-size: 3rem;
@@ -219,7 +219,7 @@ section {
 
 /*About*/
 .about-container {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
   padding-bottom: 5rem;
@@ -252,7 +252,7 @@ section {
   color: var(--color-secondary);
 }
 .about-container .right-about .about-item .abt-text .small-text {
-  padding-left: 3rem;
+  padding-left: 2rem;
   position: relative;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -269,7 +269,7 @@ section {
   background-color: var(--color-grey-5);
 }
 .about-container .left-about {
-  padding-right: 5rem;
+  padding-right: 1rem;
 }
 .about-container .left-about p {
   line-height: 2rem;
@@ -286,7 +286,7 @@ section {
 }
 .about-stats .progress-bars {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
 }
 .about-stats .progress-bars .progress-bar {
@@ -697,6 +697,14 @@ section {
     padding-top: 3rem;
   }
 
+  .first-p-intro {
+    padding-top: 3rem;
+  }
+
+  .sec-p-intro {
+    padding-bottom: 3rem;
+  }
+
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
@@ -846,7 +854,7 @@ section {
   }
 
   .header-content .right-header {
-    padding-right: 9rem;
+    padding-right: 8rem;
   }
 }
 @media screen and (max-width: 660px) {
