@@ -588,6 +588,7 @@ section {
 .btn-con {
   display: flex;
   align-self: flex-start;
+  padding-top: 3rem;
 }
 
 .btn-calendly {
