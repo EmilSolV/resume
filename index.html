@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body class="main-content">
     <header class="container header active" id="home">
@@ -54,6 +56,7 @@
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
                 </div>
+                
             </div>
         </div>
     </header>
@@ -86,14 +89,42 @@
                 </div> 
                 <div class="about-stats">
                     <h4 class="stat-title">My Main Skills</h4>
-                    <p class="skill">.NET</p>
-                    <p class="skill">ANGULAR</p>
-                    <p class="skill">REACT</p>
-                    <p class="skill">NODE.JS</p>
-                    <p class="skill">JS</p>
-                    <p class="skill">HTML5 & CSS3</p>
-                    <p class="skill">SQL</p>
-                    <p class="skill">AGILE</p>
+                    <div class="tooltip">
+                        <span class="skill">.NET</span>
+                        <span class="tooltiptext">8 years</span>
+                    </div>
+                    <div class="tooltip">
+                        <span class="skill">JS</span>
+                        <span class="tooltiptext">8 years</span>
+                    </div>
+                    <div class="tooltip">
+                        <span class="skill">SQL</span>
+                        <span class="tooltiptext">8 years</span>
+                    </div>
+                    <div class="tooltip">
+                        <span class="skill">ANGULAR</span>
+                        <span class="tooltiptext">7 years</span>
+                    </div>
+                    <div class="tooltip">
+                        <span class="skill">AGILE</span>
+                        <span class="tooltiptext">6.5 years</span>
+                    </div>                    
+                    <div class="tooltip">
+                        <span class="skill">NODE.JS</span>
+                        <span class="tooltiptext">5 years</span>
+                    </div>
+                    <div class="tooltip">
+                        <span class="skill">REACT</span>
+                        <span class="tooltiptext">3 years</span>
+                    </div>
+                    <div class="tooltip">
+                        <span class="skill">RAZOR</span>
+                        <span class="tooltiptext">3 years</span>
+                    </div>
+                    <div class="tooltip">
+                        <span class="skill">VUE.JS</span>
+                        <span class="tooltiptext">3 years</span>
+                    </div>     
                 </div>               
             </div>  
         </section>
@@ -130,10 +161,10 @@
                 </div>
                 <div class="timeline-item">
                     <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-briefcase"></i>                        
                     </div>
                     <p class="tl-duration">APR. 2022 - DIC. 2022</p>
-                    <h5>Engineer Lead 
+                    <h5>Engineer Lead - Team Lead
                             <a href="http://www.trickgs.com/" target="_blank">
                                 <span class="link-title">Trick Gaming Studios</span>
                             </a>
@@ -326,14 +357,19 @@
                             </div>
                             <p class="tl-duration">JUN. 2023 - AUG. 2023</p>
                              <div>
-                                <a href="https://www.linkedin.com/in/emil-sol-vasquez/overlay/1635546069933/single-media-viewer/?profileId=ACoAABCDAg8B-3OgmqTc-p79bhFcttLQiw-w-sk" target="_blank">
-                                    <h5 class="link-title">GAME DESIGN TRAINING<span> - ADVA</span></h5>
+                                <a href="javascript:void(0);" class="openModal link-title" data-image="img/game-design.jpg">
+                                    <h5 class="link-title">GAME DESIGN TRAINING</h5>
                                 </a>
-                            </div>   
-                            <a href="https://itch.io/jam/adva-game-jam-2023/rate/2244724" target="_blank">
-                                <span class="link-title"> Check out our game on itch.io :)</span>
-                            </a>
-                        </div>
+                                <a href="https://adva.vg/" target="_blank">
+                                    <span class="link-title"> - ADVA</span>
+                                </a>
+                            </div>  
+                            <div> 
+                                <a href="https://itch.io/jam/adva-game-jam-2023/rate/2244724" target="_blank">
+                                    <span class="link-title"> Check out our game on itch.io :)</span>
+                                </a>
+                            </div>
+                        </div>                     
                         <div class="timeline-item">
                             <div class="tl-icon">
                                 <i class="fas fa-user-graduate"></i>
@@ -350,56 +386,220 @@
                         </div>
                         <div class="timeline-item">
                             <div class="tl-icon">
-                                <i class="fas fa-user-graduate"></i>
+                                <a href="#" id="platziDropIcon">
+                                    <i class="fas fa-layer-group"></i>   
+                                </a>                                                  
                             </div>
-                            <p class="tl-duration">SEP. 2021</p>
-                            <div>
-                                <a href="https://platzi.com/p/emilvasquez/curso/1642-course/diploma/detalle/" target="_blank">
-                                    <h5 class="link-title">PROFESSIONAL COURSE ON JAVASCRIPT<span> - PLATZI</span></h5>
+                            <h5>
+                                <a href="#" id="platziDrop">
+                                    <span class="link-title">PLATZI - Certifications</span>
                                 </a>
-                            </div>                            
-                            <p>
-                                Javascript engine. Typescript. Develop of plugins to manipulate elements of the DOM. Design patterns
-                            </p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="tl-icon">
-                                <i class="fas fa-user-graduate"></i>
-                            </div>
-                            <p class="tl-duration">SEP. 2021</p>
+                            </h5>
                             <div>
-                                <a href="https://platzi.com/p/emilvasquez/curso/1789-asincronismo-js/diploma/detalle/" target="_blank">
-                                    <h5 class="link-title">ASYNCHRONISM WITH JAVASCRIPT<span> - PLATZI</span></h5>
-                                </a>
+                                <p>
+                                    I constantly refresh my knowledge about the technologies I work on, and also enjoy learning new ones. Click to see my latest certifications! :)
+                                </p>
                             </div>
-                            <p>
-                                Deploy to GitHub Pages. Apply asynchronous functions. Interaction with APIs. Concepts of Event Loop, Callbacks and promises
-                            </p>
-                        </div>
+                            <br>
+                            <div id="platziContent">
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-clean-code-csharp.png">
+                                            <h5 class="link-title">BEST PRACTICES AND CLEAN CODE IN C#</h5>
+                                        </a>
+                                    </div>
+                                    <p>
+                                        Coding standards and conventions. Readable and well-named code. Modular organization. Effective error handling and logging. Embracing unit testing and continuous code improvement.
+                                    </p>   
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-solid-csharp-net.png">
+                                            <h5 class="link-title">SOLID PRINCIPLES IN C# AND .NET</h5>
+                                        </a>
+                                    </div>                            
+                                    <p>
+                                        Implementing SOLID principles in C# and .NET. Real-world application and benefits. Building maintainable and scalable software with SOLID principles.
+                                    </p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-patrones-diseno-software.png">
+                                            <h5 class="link-title">INTRODUCTION TO SOFTWARE DESIGN PATTERNS</h5>
+                                        </a>                                            
+                                    </div>  
+                                    <p>
+                                        Design principles, creational, structural and behavioral patterns, and their application in real-world scenarios. Best practices in software design.
+                                    </p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-apis-net.png">
+                                            <h5 class="link-title">APIS WITH .NET</h5>
+                                        </a>
+                                    </div>  
+                                    <p>
+                                        API architecture, RESTful API creation, security, validation, error handling, versioning, Swagger documentation, API consumption in .NET, best practices.
+                                    </p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-entity-framework.png">
+                                            <h5 class="link-title">ENTITY FRAMEWORK FUNDAMENTALS</h5>
+                                        </a>
+                                    </div> 
+                                    <p>
+                                        Database modeling, code-first/database-first, LINQ data querying, transactions, migrations, performance, real-world applications.
+                                    </p>  
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-fundamentos-net.png">
+                                            <h5 class="link-title">.NET FUNDAMENTALS</h5>
+                                        </a>
+                                    </div>  
+                                    <p>
+                                        .NET architecture, runtime environment, hands-on application development, data handling, UI creation, service implementation, key component integration.
+                                    </p>    
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-c-sharp-poo.png">
+                                            <h5 class="link-title">OBJECT-ORIENTED PROGRAMMING WITH C#</h5>
+                                        </a>
+                                    </div> 
+                                    <p>
+                                        Fundamental OOP principles, creating classes and objects, advanced inheritance, understanding abstraction, exploring polymorphism, developing efficient, maintainable software in the C# environment.
+                                    </p>       
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-csharp.png">
+                                            <h5 class="link-title">C# BASICS: FUNDAMENTALS, VARIABLES AND OPERATORS</h5>
+                                        </a>
+                                    </div>    
+                                    <p>
+                                        C# syntax, variables, control structures, essential functions, object-oriented concepts, hands-on data manipulation, creating effective and simple programs.
+                                    </p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-fundamentos-node.png">
+                                            <h5 class="link-title">NODE.JS FUNDAMENTALS</h5>
+                                        </a>
+                                    </div>   
+                                    <p>
+                                        Asynchronous programming, Express.js for RESTful APIs, MongoDB integration, middleware, routing, real-time applications with Socket.io, unit testing, deployment/scalability strategies.
+                                    </p>      
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-js-pro.png">
+                                            <h5 class="link-title">PROFESSIONAL COURSE ON JAVASCRIPT</h5>
+                                        </a>
+                                    </div>                            
+                                    <p>
+                                        Javascript engine. Typescript. Develop of plugins to manipulate elements of the DOM. Design patterns.
+                                    </p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-js-async.png">
+                                            <h5 class="link-title">ASYNCHRONISM WITH JAVASCRIPT</h5>
+                                        </a>
+                                    </div>
+                                    <p>
+                                        Deploy to GitHub Pages. Apply asynchronous functions. Interaction with APIs. Concepts of Event Loop, Callbacks and promises.
+                                    </p>
+                                </div> 
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-js.png">
+                                            <h5 class="link-title">JAVASCRIPT BASICS</h5>
+                                        </a>
+                                    </div>                            
+                                    <p>
+                                        Variables, control flow, functions, arrays, objects, DOM manipulation, asynchronous programming with Promises, building interactive web pages.
+                                    </p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="tl-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="openModal link-title" data-image="img/diploma-ai.png">
+                                            <h5 class="link-title">INTRODUCTION TO ARTIFICIAL INTELLIGENCE</h5>
+                                        </a>
+                                    </div> 
+                                    <p>
+                                        Supervised and unsupervised learning, neural networks, deep learning, NLP, computer vision, image recognition, real-world applications, ethical considerations in AI.
+                                    </p> 
+                                </div>                               
+                            </div>
+                        </div>   
                         <div class="timeline-item">
                             <div class="tl-icon">
                                 <i class="fas fa-user-graduate"></i>
                             </div>
                             <p class="tl-duration">OCT. 2018</p>
                             <div>
-                                <a href="https://www.linkedin.com/in/emil-sol-vasquez/details/education/572352578/multiple-media-viewer/?treasuryMediaId=1547148910095" target="_blank">
+                                <a href="javascript:void(0);" class="openModal link-title" data-image="img/Microsoft-certificate.png">
                                     <h5 class="link-title">PROFESSIONAL CERTIFICATION IN HTML5 WITH JAVASCRIPT AND CSS3<span> - MICROSOFT</span></h5>
                                 </a>
                             </div>
                             <p>
                                 Uses of HTML in an object-based, event-driven programming model, and programming essential business logic for a variety of application types, hardware, and software platforms using JavaScript
                             </p>
-                        </div>
+                        </div>                     
                         <div class="timeline-item">
                             <div class="tl-icon">
                                 <i class="fas fa-user-graduate"></i>
                             </div>
                             <p class="tl-duration">AUG. 2017</p>
                             <div>
-                                <a href="https://www.linkedin.com/in/emil-sol-vasquez/details/education/1511848089220/single-media-viewer/" target="_blank">
-                                    <h5 class="link-title">AGILE CERTIFICATION PROGRAM<span> - ACCENTURE</span></h5>
+                                <a href="javascript:void(0);" class="openModal link-title" data-image="img/agile-certificate.png">
+                                    <h5 class="link-title">AGILE CERTIFICATION PROGRAM</h5>
                                 </a>
-                            </div>
+                                <a href="https://www.accenture.com" target="_blank">
+                                    <span class="link-title"> - ACCENTURE</span>
+                                </a>
+                            </div>  
                         </div>
                         <div class="timeline-item">
                             <div class="tl-icon">
@@ -421,7 +621,7 @@
                             </div>
                             <p class="tl-duration">SEP. 2014</p>
                             <div>
-                                <a href="https://www.linkedin.com/in/emil-sol-vasquez/details/education/1574729809305/single-media-viewer/" target="_blank">
+                                <a href="javascript:void(0);" class="openModal link-title" data-image="img/FCE.png">
                                     <h5 class="link-title">FIRST CERTIFICATE IN ENGLISH (FCE)<span class="link-title">- Cambridge</span></h5>
                                 </a>
                             </div>
@@ -524,6 +724,46 @@
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
+    <div id="imgModal">
+        <div id="modalContent">
+            <img id="modalImage" src="" alt="Image">
+            <span class="close" id="closeButton">&times;</span>
+        </div>
+    </div>
     <script src="app.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var openModalBtns = document.getElementsByClassName("openModal");
+            var modal = document.getElementById("imgModal");
+            var modalImage = document.getElementById("modalImage");
+            var platziTitle = document.getElementById("platziDrop");
+            var platziIcon = document.getElementById("platziDropIcon");
+            var platziContent = document.getElementById("platziContent");
+            var closeButton = document.getElementById("closeButton");
+            platziContent.style.display = "none";
+
+            for (var i = 0; i < openModalBtns.length; i++) {
+                openModalBtns[i].addEventListener("click", function(event) {
+                    event.preventDefault();
+                    var imageUrl = this.getAttribute("data-image");
+                    modalImage.src = imageUrl;
+                    modal.style.display = "flex";
+                });
+            }
+            closeButton.addEventListener("click", closeModal);
+
+            function closeModal() {
+                modal.style.display = "none";
+            }
+
+            platziTitle.addEventListener("click", togglePlatziDiv);
+            platziIcon.addEventListener("click", togglePlatziDiv);
+
+            function togglePlatziDiv(event) {
+                event.preventDefault();
+                platziContent.style.display = (platziContent.style.display === "none" || platziContent.style.display === "") ? "block" : "none";
+            }
+        });
+    </script>
 </body>
 </html>
