@@ -409,7 +409,7 @@ section {
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
-  padding: 3.5rem 0;
+  padding: 3.5rem 0 0.5rem 0;
   position: relative;
 }
 .stat-title::before {
@@ -477,7 +477,7 @@ section {
 }
 
 .skill {
-  font-size: 1.5rem;  
+  font-size: 1.1rem;  
 }
 
 .link-title:hover {
